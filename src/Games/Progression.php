@@ -9,7 +9,7 @@ const MAX_START_NUMBER = 9;
 const MAX_NUMBER_PROGRESSION = 150;
 const COUNT_PROGRESSION = 10;
 
-function getProgressionQuestion()
+function getProgressionQuestion(): array
 {
     $firstNumber = (string)random_int(1, MAX_START_NUMBER);
     $progressionIncrement = random_int(1, MAX_START_NUMBER);
@@ -21,7 +21,7 @@ function getProgressionQuestion()
     return [implode(' ', $progression), (string)$rightAnswer];
 }
 
-function playProgression()
+function playProgression(): void
 {
     playGame(GAME_DESCRIPTION, 'BrainGames\Games\Progression\getProgressionQuestion');
 }

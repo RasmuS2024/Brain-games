@@ -7,7 +7,7 @@ use function cli\prompt;
 
 const COUNT_ROUNDS = 3;
 
-function welcomeToGameAndGetUserName()
+function welcomeToGameAndGetUserName(): string
 {
     line('Welcome to the Brain Games!');
     $userName = prompt('May I have your name?');
@@ -15,13 +15,13 @@ function welcomeToGameAndGetUserName()
     return $userName;
 }
 
-function putQuestionAndGetAnswer(string $question)
+function putQuestionAndGetAnswer(string $question): string
 {
     line('Question: %s', $question);
     return prompt('Your answer');
 }
 
-function printResultOfQuestion(bool $result, string $gamerAnswer, string $rightAnswer, string $nameOfGamer)
+function printResultOfQuestion(bool $result, string $gamerAnswer, string $rightAnswer, string $nameOfGamer): void
 {
     if ($result) {
         line('Correct!');
@@ -31,7 +31,7 @@ function printResultOfQuestion(bool $result, string $gamerAnswer, string $rightA
     }
 }
 
-function playGame(string $gameDescription, callable $gameFunction)
+function playGame(string $gameDescription, callable $gameFunction): void
 {
     $nameOfGamer = welcomeToGameAndGetUserName();
     line($gameDescription);

@@ -26,14 +26,14 @@ function isPrimeNumber(int $number): bool
     return true;
 }
 
-function getPrimeQuestion()
+function getPrimeQuestion(): array
 {
     $randomNumber = random_int(1, MAX_RANDOM_NUMBER);
     $rightAnswer = isPrimeNumber($randomNumber) ? 'yes' : 'no';
     return [(string)$randomNumber, $rightAnswer];
 }
 
-function playPrime()
+function playPrime(): void
 {
     playGame(GAME_DESCRIPTION, 'BrainGames\Games\Prime\getPrimeQuestion');
 }

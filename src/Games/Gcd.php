@@ -8,7 +8,7 @@ const GAME_DESCRIPTION = 'Find the greatest common divisor of given numbers.';
 const MIN_NUMBER = 1;
 const MAX_NUMBER = 20;
 
-function getGcd(int $number1, int $number2)
+function getGcd(int $number1, int $number2): int
 {
     while ($number2 !== 0) {
         $temp = $number2;
@@ -18,7 +18,7 @@ function getGcd(int $number1, int $number2)
     return $number1;
 }
 
-function getGcdQuestion()
+function getGcdQuestion(): array
 {
     $firstNumber = random_int(MIN_NUMBER, MAX_NUMBER);
     $secondNumber = random_int(MIN_NUMBER, MAX_NUMBER);
@@ -27,7 +27,7 @@ function getGcdQuestion()
     return [$question, $rightAnswer];
 }
 
-function playGcd()
+function playGcd(): void
 {
     playGame(GAME_DESCRIPTION, 'BrainGames\Games\Gcd\getGcdQuestion');
 }

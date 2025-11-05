@@ -13,14 +13,14 @@ function isEvenNumber(int $number): bool
     return $number % 2 === 0;
 }
 
-function getEvenQuestion()
+function getEvenQuestion(): array
 {
     $randomNumber = random_int(MIN_NUMBER, MAX_RANDOM_NUMBER);
     $rightAnswer = isEvenNumber($randomNumber) ? 'yes' : 'no';
     return [(string)$randomNumber, $rightAnswer];
 }
 
-function playEven()
+function playEven(): void
 {
     playGame(GAME_DESCRIPTION, 'BrainGames\Games\Even\getEvenQuestion');
 }
