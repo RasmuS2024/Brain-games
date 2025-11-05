@@ -24,3 +24,4 @@ validate:
 
 lint:
 	composer exec --verbose phpcs -- --standard=PSR12 src bin
+	composer exec -v phpstan analyse -- -c phpstan.neon --ansi src bin

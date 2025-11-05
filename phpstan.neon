@@ -1,0 +1,20 @@
+parameters:
+  level: 8
+  paths:
+    - code
+
+  excludePaths:
+    - '*/vendor/*'
+
+  reportUnmatchedIgnoredErrors: false
+
+  phpstanFunctionalProgramming:
+    disallowLoops: false
+    disallowThrow: false
+    disallowUnusedExpression: false
+    disallowVariablesMutation: false
+    disallowMutatingFunctions: false
+
+  ignoreErrors:
+    - '#Anonymous function should have native return type#'
+    - identifier: missingType.iterableValue
