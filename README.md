@@ -31,14 +31,14 @@ To start the game, enter 'make "game name"' in the console, for example: make br
 * Git
 
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/RasmuS2024/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/RasmuS2024/php-project-45/actions)
+[![Actions Status](https://github.com/RasmuS2024/Brain-games/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/RasmuS2024/Brain-games/actions)
 
 <a href="https://codeclimate.com/github/RasmuS2024/php-project-45/maintainability"><img src="https://api.codeclimate.com/v1/badges/d99a0a6a3c9a58a6fb8c/maintainability" /></a>
 
 ## Setup
 ```bash
-git clone https://github.com/RasmuS2024/php-project-45.git
-cd php-project-45
+git clone https://github.com/RasmuS2024/Brain-games.git
+cd Brain-games
 make install
 ```
 ## Setup process in asciinema
